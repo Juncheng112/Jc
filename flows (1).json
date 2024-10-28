@@ -1,0 +1,177 @@
+[
+  {
+    "id": "77e2455bbe2766af",
+    "type": "ui-button",
+    "z": "b508b2cf4781499a",
+    "group": "087559f9b99f047a",
+    "name": "",
+    "label": "Clear Chart Data",
+    "order": 9,
+    "width": 0,
+    "height": 0,
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "x": 190,
+    "y": 40,
+    "wires": [
+      [
+        "82da15731164b49d"
+      ]
+    ]
+  },
+  {
+    "id": "82da15731164b49d",
+    "type": "ui-chart",
+    "z": "b508b2cf4781499a",
+    "group": "087559f9b99f047a",
+    "name": "",
+    "label": "chart",
+    "order": 5,
+    "chartType": "line",
+    "category": "Slider",
+    "categoryType": "str",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "property",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "yAxisLabel": "",
+    "yAxisProperty": "",
+    "ymin": "",
+    "ymax": "",
+    "action": "append",
+    "pointShape": "circle",
+    "pointRadius": 4,
+    "showLegend": true,
+    "removeOlder": 1,
+    "removeOlderUnit": "3600",
+    "removeOlderPoints": "",
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "width": 6,
+    "height": 8,
+    "className": "",
+    "x": 350,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "99a6eaa712fa8a12",
+    "type": "ui-slider",
+    "z": "b508b2cf4781499a",
+    "group": "087559f9b99f047a",
+    "name": "",
+    "label": "Slider",
+    "tooltip": "",
+    "order": 7,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "outs": "all",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": "true",
+    "showTicks": "always",
+    "min": 0,
+    "max": 10,
+    "step": 1,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "x": 210,
+    "y": 80,
+    "wires": [
+      [
+        "82da15731164b49d"
+      ]
+    ]
+  },
+  {
+    "id": "087559f9b99f047a",
+    "type": "ui-group",
+    "name": "Line Charts with Sliders",
+    "page": "39fae809f6f7fc7b",
+    "width": "6",
+    "height": "1",
+    "order": 2,
+    "showTitle": false,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "39fae809f6f7fc7b",
+    "type": "ui-page",
+    "name": "Charts",
+    "ui": "72c1e5a9ec204878",
+    "path": "/charts-example",
+    "icon": "chart-box-outline",
+    "layout": "notebook",
+    "theme": "5075a7d8e4947586",
+    "order": 1,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "72c1e5a9ec204878",
+    "type": "ui-base",
+    "name": "My Dashboard",
+    "path": "/dashboard",
+    "includeClientData": true,
+    "acceptsClientConfig": [
+      "ui-notification",
+      "ui-control",
+      "ui-chart"
+    ],
+    "showPathInSidebar": false,
+    "showPageTitle": true,
+    "navigationStyle": "default",
+    "titleBarStyle": "default"
+  },
+  {
+    "id": "5075a7d8e4947586",
+    "type": "ui-theme",
+    "name": "Default Theme",
+    "colors": {
+      "surface": "#ffffff",
+      "primary": "#0094CE",
+      "bgPage": "#eeeeee",
+      "groupBg": "#ffffff",
+      "groupOutline": "#cccccc"
+    },
+    "sizes": {
+      "pagePadding": "12px",
+      "groupGap": "12px",
+      "groupBorderRadius": "4px",
+      "widgetGap": "12px"
+    }
+  }
+]
